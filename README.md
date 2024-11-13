@@ -1,55 +1,108 @@
-# 🖥️ Personal Portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darryn Tyler - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Intro Section -->
+  <section id="home" class="intro">
+    <div class="intro-content">
+      <div class="skills">
+        <span class="pill">Python</span>
+        <span class="pill">HTML</span>
+        <span class="pill">JavaScript</span>
+      </div>
+      <div>
+        <h1>Hello, I’m <span class="highlight">Darryn Tyler</span></h1>
+        <p>
+          A motivated student at Virginia State University, passionate about
+          data analytics and building technical skills in Python and coding to
+          solve data-driven challenges.
+        </p>
+        <div class="buttons">
+          <a href="mailto:dtinquires@gmail.com" class="btn">Get in touch</a>
+          <button class="btn-outline" onclick="scrollToSection('#about')">Learn more</button>
+        </div>
+        <div class="scroll-indicator">Scroll to discover ▼</div>
+      </div>
+    </div>
+  </section>
 
-A sleek, modern, and responsive portfolio bootstrapped with [create-t3-app](https://create.t3.gg/).
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>
+      I am a freshman at Virginia State University, pursuing a Bachelor of
+      Science in Computer Science with a minor in Cyber Security. I’m committed
+      to building a career in data analysis and enhancing my technical knowledge
+      in programming and problem-solving.
+    </h2>
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-value">Beginner</span>
+        <span class="stat-label">Years of experience</span>
+      </div>
+    </div>
+  </section>
 
-[Website Preview](https://github.com/wendoj/portfolio/assets/77996774/b73b02d7-0657-41e3-9124-e6d04b17fe93)
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>✨ Projects</h2>
+    <p>I’ve worked on a few projects, exploring my skills in Python and coding.</p>
+    <div class="project">
+      <a href="https://github.com/dt2738/" target="_blank">
+        <img src="assets/github_image_placeholder.png" alt="GitHub Profile" />
+        <div class="project-description">Explore my coding projects and contributions</div>
+      </a>
+    </div>
+  </section>
 
-[🔗 Link to portfolio](https://www.wendoj.codes)
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Need more info? I got you.</h2>
+    <p>
+      Here are some of the services I offer. If you have any questions, feel
+      free to reach out.
+    </p>
+    <div class="service">
+      <div class="service-icon">🔍</div>
+      <h3>Data Analysis Aspirations</h3>
+      <p>
+        Developing data-driven skills in Python and JavaScript for analytical
+        applications.
+      </p>
+    </div>
+    <div class="service">
+      <div class="service-icon">💻</div>
+      <h3>Programming and Coding</h3>
+      <p>
+        Skilled in Python, HTML, and JavaScript, with hands-on experience from
+        university and independent projects.
+      </p>
+    </div>
+    <div class="service">
+      <div class="service-icon">🖥️</div>
+      <h3>Technical Proficiency</h3>
+      <p>
+        Proficient with Microsoft Office 365, Google Suite, and code editors
+        like Visual Studio Code and PyCharm.
+      </p>
+    </div>
+  </section>
 
-All you need to know about me, my projects and skills can be found here. Personalize the portfolio by modifying `src/pages/index.tsx` and `src/styles/globals.css` to emulate your own portfolio. Made some improvements and want to share? Open a pull request.
-For any issues, feel free to report them here.
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Let’s work together.</h2>
+    <p>I’m currently available for freelance work and open to discussing new projects.</p>
+    <a href="mailto:dtinquires@gmail.com" class="btn">Get in touch</a>
+  </section>
 
-## 🎉 Features
-- **Responsive Design**: The portfolio is designed to be fully responsive, providing an optimal viewing experience across a wide range of devices from desktops to mobile phones.
-- **Easy Customization**: The portfolio structure is straightforward and well organized, making it easy to customize and showcase your unique set of skills and projects.
-- **Stunning UI/UX Design**: The portfolio boasts a sleek and modern design, using smooth animations to capture the attention of potential employers or clients.
-- **Interactive UI**: Utilizing modern web development techniques, the portfolio offers an interactive user interface that enhances user experience, such as `locomotive-scroll` and `framer-motion`.
-
-## 🚀 Getting Started
-
-### Prerequisites
-To get started with this portfolio, ensure that you have the following installed on your system:
-- Node.js
-- npm
-- git
-
-## 🛠️ Installation
-Follow the steps below to clone and run this project on your local system:
-
-```bash
-# Clone the repository
-$ git clone https://github.com/wendoj/developer-portfolio.git
-
-# Navigate to the project directory
-$ cd developer-portfolio
-
-# Remove current origin repository
-$ git remote remove origin
-```
-
-<br />
-
-Then install the required dependencies:
-```bash
-# Install dependencies
-$ npm install
-
-# Start the development server:
-$ npm run dev
-```
-Now, open your browser and navigate to `http://localhost:3000` to view your portfolio live.
-
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+  <script>
+    function scrollToSection(id) {
+      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+</body>
+</html>
