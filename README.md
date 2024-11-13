@@ -3,28 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Darryn Tyler - Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <!-- Intro Section -->
   <section id="home" class="intro">
     <div class="intro-content">
-      <div class="skills">
-        <span class="pill">Python</span>
-        <span class="pill">HTML</span>
-        <span class="pill">JavaScript</span>
-      </div>
       <div>
         <h1>Hello, I’m <span class="highlight">Darryn Tyler</span></h1>
         <p>
           A motivated student at Virginia State University, passionate about
-          data analytics and building technical skills in Python and coding to
-          solve data-driven challenges.
+          data analytics and building technical skills in coding to solve
+          data-driven challenges.
         </p>
         <div class="buttons">
           <a href="mailto:dtinquires@gmail.com" class="btn">Get in touch</a>
-          <button class="btn-outline" onclick="scrollToSection('#about')">Learn more</button>
+          <a href="#about" class="btn-outline">Learn more</a>
         </div>
         <div class="scroll-indicator">Scroll to discover ▼</div>
       </div>
@@ -50,7 +44,7 @@
   <!-- Projects Section -->
   <section id="projects" class="projects">
     <h2>✨ Projects</h2>
-    <p>I’ve worked on a few projects, exploring my skills in Python and coding.</p>
+    <p>I’ve worked on a few projects, exploring my skills in coding.</p>
     <div class="project">
       <a href="https://github.com/dt2738/" target="_blank">
         <img src="assets/github_image_placeholder.png" alt="GitHub Profile" />
@@ -70,24 +64,21 @@
       <div class="service-icon">🔍</div>
       <h3>Data Analysis Aspirations</h3>
       <p>
-        Developing data-driven skills in Python and JavaScript for analytical
-        applications.
+        Developing data-driven skills for analytical applications.
       </p>
     </div>
     <div class="service">
       <div class="service-icon">💻</div>
       <h3>Programming and Coding</h3>
       <p>
-        Skilled in Python, HTML, and JavaScript, with hands-on experience from
-        university and independent projects.
+        Skilled in coding with hands-on experience from university and independent projects.
       </p>
     </div>
     <div class="service">
       <div class="service-icon">🖥️</div>
       <h3>Technical Proficiency</h3>
       <p>
-        Proficient with Microsoft Office 365, Google Suite, and code editors
-        like Visual Studio Code and PyCharm.
+        Proficient with Microsoft Office 365, Google Suite, and code editors like Visual Studio Code and PyCharm.
       </p>
     </div>
   </section>
@@ -98,11 +89,6 @@
     <p>I’m currently available for freelance work and open to discussing new projects.</p>
     <a href="mailto:dtinquires@gmail.com" class="btn">Get in touch</a>
   </section>
-
-  <script>
-    function scrollToSection(id) {
-      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-    }
-  </script>
 </body>
 </html>
+
