@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- CSS Embedded Directly in HTML -->
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Fonts and Colors */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f7f7f7;
+    }
+
+    h1, h2, h3 {
+      color: #222;
+    }
+
+    .highlight {
+      color: #ff6347; /* Tomato red for accent */
+    }
+
+    .btn, .btn-outline {
+      padding: 0.8rem 1.2rem;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    /* Button Styles */
+    .btn {
+      background-color: #ff6347;
+      color: #fff;
+    }
+
+    .btn:hover {
+      background-color: #ff4500;
+    }
+
+    .btn-outline {
+      border: 2px solid #ff6347;
+      color: #ff6347;
+    }
+
+    .btn-outline:hover {
+      background-color: #ff6347;
+      color: #fff;
+    }
+
+    /* Intro Section */
+    .intro {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      background: linear-gradient(to bottom, #ffebcd, #f7f7f7);
+    }
+
+    .intro-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .intro-content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .scroll-indicator {
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      color: #ff6347;
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* About Section */
+    .about {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: #fff;
+    }
+
+    .about h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .stat {
+      margin: 0 1.5rem;
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ff6347;
+    }
+
+    .stat-label {
+      color: #777;
+    }
+
+    /* Projects Section */
+    .projects {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: #f7f7f7;
+    }
+
+    .projects h2 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    .projects p {
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .project img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .project:hover img {
+      transform: scale(1.05);
+    }
+
+    .project-description {
+      margin-top: 0.8rem;
+      color: #666;
+    }
+
+    /* Services Section */
+    .services {
+      padding: 4rem 2rem;
+      background: #ffebcd;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    .service {
+      margin-top: 1.5rem;
+    }
+
+    .service-icon {
+      font-size: 2rem;
+      color: #ff6347;
+    }
+
+    .service h3 {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #333;
+    }
+
+    .service p {
+      color: #555;
+      margin-top: 0.5rem;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: #fff;
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    .contact p {
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .buttons {
+        flex-direction: column;
+      }
+
+      .intro-content p {
+        font-size: 1rem;
+      }
+
+      .stat-value {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Intro Section -->
+  <section id="home" class="intro">
+    <div class="intro-content">
+      <div>
+        <h1>Hello, I’m <span class="highlight">Darryn Tyler</span></h1>
+        <p>
+          A motivated student at Virginia State University, passionate about
+          data analytics and building technical skills in coding to solve
+          data-driven challenges.
+        </p>
+        <div class="buttons">
+          <a href="mailto:dtinquires@gmail.com" class="btn">Get in touch</a>
+          <a href="#about" class="btn-outline">Learn more</a>
+        </div>
+        <div class="scroll-indicator">Scroll to discover ▼</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <!-- Your other sections remain the same -->
+</body>
+</html>
